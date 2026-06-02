@@ -1,8 +1,5 @@
-# EV-Sales-data-analysis
+#📊 EV-Sales-data-analysis
 EV Sales data analysis using python, sql including 96k rows
-# Data Analytics Project README
-
-# 📊 Data Analytics Project
 
 ## Overview
 
@@ -26,22 +23,29 @@ The project utilizes Python for data processing and analysis, PostgreSQL/MySQL f
 
 ## Dataset
 
-**Dataset Name:** [Dataset Name]
+**Dataset Name:** [EV Sales data]
 
-**Source:** [Source URL or Provider]
+**Source:** [Kaggle]
 
 **Description:**
-The dataset contains information related to [industry/domain], including key variables such as:
+The dataset contains information related to [vehicles sales], including key variables such as:
+EV sales dataset with 96,845 rows and 8 columns:
 
-* Variable 1
-* Variable 2
-* Variable 3
-* Variable 4
+*Year
+*Month_Name
+*Date
+*State
+*Vehicle_Class
+*Vehicle_Category
+*Vehicle_Type
+*EV_Sales_Quantity
+
+It covers 2014 to 2023, 34 states/UTs, and vehicle groups like 2-Wheelers, 3-Wheelers, 4-Wheelers, Bus, Others.
 
 **Dataset Size:**
 
-* Rows: XXXX
-* Columns: XX
+* Rows: 96, 845
+* Columns: 8
 
 ---
 
@@ -57,8 +61,7 @@ The dataset contains information related to [industry/domain], including key var
 | PostgreSQL / MySQL | Database storage and querying |
 | SQL                | Business analysis queries     |
 | Power BI           | Dashboard creation            |
-| Gamma              | Presentation development      |
-| Jupyter Notebook   | Analysis environment          |
+
 
 ---
 
@@ -156,22 +159,20 @@ Key findings from the analysis include:
 Project/
 │
 ├── data/
-│   ├── raw_data.csv
-│   └── cleaned_data.csv
+│   ├── ev_salesdata.csv
+│   └── ev_sales.csv
 │
 ├── notebooks/
-│   ├── data_cleaning.ipynb
-│   └── eda.ipynb
+│ 
+│   └── ev_python.ipynb
 │
 ├── sql/
 │   ├── schema.sql
-│   └── analysis_queries.sql
+│   └── ev_sql.sql
 │
 ├── dashboard/
-│   └── dashboard.pbix
+│   └──evsales.pbix
 │
-├── presentation/
-│   └── project_presentation.pptx
 │
 ├── images/
 │   └── dashboard_screenshots
@@ -207,7 +208,7 @@ python data_cleaning.py
 ### Step 3: Perform EDA
 
 ```bash
-python eda.py
+ev_python.py
 ```
 
 ### Step 4: Load Data into Database
@@ -225,7 +226,7 @@ Import cleaned dataset into PostgreSQL/MySQL.
 Execute:
 
 ```sql
-SOURCE analysis_queries.sql;
+ev_sql.sql;
 ```
 
 ### Step 6: Open Power BI Dashboard
@@ -233,7 +234,7 @@ SOURCE analysis_queries.sql;
 Open:
 
 ```text
-dashboard.pbix
+evsales.pbix
 ```
 
 ---
@@ -250,7 +251,7 @@ dashboard.pbix
 
 ## Author
 
-**Name:** [Your Name]
+**Name:** [Aryan Babelay]
 
 **Role:** Data Analyst
 
